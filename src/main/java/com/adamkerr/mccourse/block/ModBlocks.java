@@ -44,7 +44,7 @@ public class ModBlocks
 
 
     public static final RegistryObject<Block> COPPER_PRESURE_PLATE = register("copper_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
             AbstractBlock.Properties.create(Material.IRON)
             .hardnessAndResistance(3f, 10f)
             .sound(SoundType.METAL).harvestTool(ToolType.PICKAXE)));
