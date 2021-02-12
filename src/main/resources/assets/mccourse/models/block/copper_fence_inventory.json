@@ -1,6 +1,6 @@
 {
   "parent": "block/fence_inventory",
   "textures": {
-    "all": "mccourse:block/copper_block"
+    "texture": "mccourse:block/copper_block"
   }
 }

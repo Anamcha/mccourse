@@ -1,6 +1,6 @@
 {
   "parent": "block/template_fence_gate",
   "textures": {
-    "all": "mccourse:block/copper_block"
+    "texture": "mccourse:block/copper_block"
   }
 }

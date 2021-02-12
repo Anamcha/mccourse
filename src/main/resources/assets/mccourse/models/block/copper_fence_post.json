@@ -1,6 +1,6 @@
 {
   "parent": "block/fence_post",
   "textures": {
-    "all": "mccourse:block/copper_block"
+    "texture": "mccourse:block/copper_block"
   }
 }
