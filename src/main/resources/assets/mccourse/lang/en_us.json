@@ -17,6 +17,10 @@
 
   "block.mccourse.copper_ore": "Copper Ore",
   "block.mccourse.copper_block": "Copper Block",
+  "block.mccourse.copper_fence": "Copper Fence",
+  "block.mccourse.copper_fence_gate": "Copper Fence Gate",
+  "block.mccourse.copper_stairs": "Copper Stairs",
+  "block.mccourse.copper_button": "Copper Button",
 
   "itemGroup.courseTab": "Course Tab"
 }

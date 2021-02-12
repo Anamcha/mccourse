@@ -28,17 +28,31 @@ public class ModBlocks
             AbstractBlock.Properties.create(Material.IRON)));
 
     public static final RegistryObject<Block> COPPER_FENCE = register("copper_fence",
-            () -> new FenceBlock(AbstractBlock.Properties.create(Material.IRON)));
+            () -> new FenceBlock(AbstractBlock.Properties.create(Material.IRON)
+            .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+            .harvestTool(ToolType.PICKAXE)));
 
     public static final RegistryObject<Block> COPPER_FENCE_GATE = register("copper_fence_gate",
-            () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.IRON)));
+            () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.IRON)
+            .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+            .harvestTool(ToolType.PICKAXE)));
+
+    public static final RegistryObject<Block> COPPER_BUTTON = register("copper_button",
+            () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.IRON)
+            .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+            .harvestTool(ToolType.PICKAXE)));
+
 
     public static final RegistryObject<Block> COPPER_PRESURE_PLATE = register("copper_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
-                    AbstractBlock.Properties.create(Material.IRON)));
+            AbstractBlock.Properties.create(Material.IRON)
+            .hardnessAndResistance(3f, 10f)
+            .sound(SoundType.METAL).harvestTool(ToolType.PICKAXE)));
 
     public static final RegistryObject<Block> COPPER_SLAB = register("copper_slab",
-            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)));
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
+            .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+            .harvestTool(ToolType.PICKAXE)));
 
 
     public static void register() { }
