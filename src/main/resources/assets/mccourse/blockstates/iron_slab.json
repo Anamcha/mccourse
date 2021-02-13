@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mccourse:block/iron_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/iron_block"
+    },
+    "type=top": {
+      "model": "mccourse:block/iron_slab_top"
+    }
+  }
+}

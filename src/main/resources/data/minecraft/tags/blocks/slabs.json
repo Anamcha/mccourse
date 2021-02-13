@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mccourse:copper_slab",
+    "mccourse:diamond_slab",
+    "mccourse:emerald_slab",
+    "mccourse:gold_slab",
+    "mccourse:iron_slab",
+    "mccourse:lapis_slab",
+    "mccourse:redstone_slab"
+  ]
+}

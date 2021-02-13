@@ -40,8 +40,7 @@ public class ModBlocks
     public static final RegistryObject<Block> COPPER_BUTTON = register("copper_button",
             () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.IRON)
             .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
-            .harvestTool(ToolType.PICKAXE)));
-
+            .harvestTool(ToolType.PICKAXE).doesNotBlockMovement()));
 
     public static final RegistryObject<Block> COPPER_PRESURE_PLATE = register("copper_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
@@ -51,9 +50,38 @@ public class ModBlocks
 
     public static final RegistryObject<Block> COPPER_SLAB = register("copper_slab",
             () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
-            .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
-            .harvestTool(ToolType.PICKAXE)));
+                    .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)));
 
+    public static final RegistryObject<Block> IRON_SLAB = register("iron_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)));
+
+    public static final RegistryObject<Block> GOLD_SLAB = register("gold_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)));
+
+    public static final RegistryObject<Block> EMERALD_SLAB = register("emerald_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)));
+
+    public static final RegistryObject<Block> DIAMOND_SLAB = register("diamond_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)));
+
+    public static final RegistryObject<Block> REDSTONE_SLAB = register("redstone_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(3f, 10f).sound(SoundType.STONE)
+                    .harvestTool(ToolType.PICKAXE)));
+
+    public static final RegistryObject<Block> LAPIS_SLAB = register("lapis_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)));
 
     public static void register() { }
 

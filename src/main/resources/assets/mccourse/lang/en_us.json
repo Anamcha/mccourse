@@ -33,6 +33,13 @@
   "block.mccourse.copper_fence_gate": "Copper Fence Gate",
   "block.mccourse.copper_stairs": "Copper Stairs",
   "block.mccourse.copper_slab": "Copper Slab",
+  "block.mccourse.diamond_slab": "Diamond Slab",
+  "block.mccourse.iron_slab": "Iron Slab",
+  "block.mccourse.gold_slab": "Gold Slab",
+  "block.mccourse.emerald_slab": "Emerald Slab",
+  "block.mccourse.redstone_slab": "Redstone Slab",
+  "block.mccourse.lapis_slab": "Lapis Lazuli Slab",
+
 
   //*******************************************************************************************************************
   //Redstone
