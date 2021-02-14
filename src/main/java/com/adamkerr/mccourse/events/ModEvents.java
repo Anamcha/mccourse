@@ -1,6 +1,7 @@
 package com.adamkerr.mccourse.events;
 
 import com.adamkerr.mccourse.item.ModItems;
+import com.adamkerr.mccourse.util.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.passive.SheepEntity;
@@ -31,7 +32,7 @@ public class ModEvents {
                     // "delete" one of the held Items
                     player.getHeldItemMainhand().shrink(1);
 
-                    target.addPotionEffect(new EffectInstance(Effects.GLOWING, 600));
+                    target.addPotionEffect(new EffectInstance(Effects.GLOWING, Config.COPPERED_GLOW_DURATION.get()));
 
                     if (!player.world.isRemote())
                     {
@@ -67,7 +68,7 @@ public class ModEvents {
                 LivingEntity target = (LivingEntity) event.getTarget();
                     PlayerEntity player = event.getPlayer();
 
-                    target.addPotionEffect(new EffectInstance(Effects.LEVITATION, 100, 40));
+                    target.addPotionEffect(new EffectInstance(Effects.LEVITATION, Config.WAND_LEVITATION_DURATION.get(), Config.WAND_LEVITATION_SPEED.get()));
 
                     if (!player.world.isRemote())
                     {

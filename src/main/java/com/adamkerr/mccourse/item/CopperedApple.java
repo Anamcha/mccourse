@@ -1,6 +1,7 @@
 package com.adamkerr.mccourse.item;
 
 import com.adamkerr.mccourse.MCCourseMod;
+import com.adamkerr.mccourse.util.Config;
 import com.adamkerr.mccourse.util.KeyboardHelper;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Food;
@@ -22,7 +23,8 @@ public class CopperedApple extends Item
                 .food(new Food.Builder()
                         .hunger(5)
                         .saturation(1.5f)
-                        .effect(() -> new EffectInstance(Effects.GLOWING, 300, 1), 0.5f)
+                        .effect(() -> new EffectInstance(Effects.GLOWING,
+                                Config.COPPERED_GLOW_DURATION.get(), 1), 0.5f)
                         .build()));
     }
     @Override
