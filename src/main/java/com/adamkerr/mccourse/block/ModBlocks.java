@@ -27,6 +27,8 @@ public class ModBlocks
             () -> new StairsBlock(() -> ModBlocks.COPPER_BLOCK.get().getDefaultState(),
                     AbstractBlock.Properties.create(Material.IRON)));
 
+    /* FENCES */
+
     public static final RegistryObject<Block> COPPER_FENCE = register("copper_fence",
             () -> new FenceBlock(AbstractBlock.Properties.create(Material.IRON)
                     .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
@@ -36,6 +38,8 @@ public class ModBlocks
             () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.IRON)
                     .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
                     .harvestTool(ToolType.PICKAXE)));
+
+    /* REDSTONE */
 
     public static final RegistryObject<Block> COPPER_BUTTON = register("copper_button",
             () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.IRON)
@@ -47,6 +51,8 @@ public class ModBlocks
                     AbstractBlock.Properties.create(Material.IRON)
                     .hardnessAndResistance(3f, 10f)
                     .sound(SoundType.METAL).harvestTool(ToolType.PICKAXE)));
+
+    /* SLABS */
 
     public static final RegistryObject<Block> COPPER_SLAB = register("copper_slab",
             () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)
@@ -81,8 +87,14 @@ public class ModBlocks
                     .hardnessAndResistance(3f, 10f).sound(SoundType.METAL)
                     .harvestTool(ToolType.PICKAXE)));
 
-    public static void register() { }
+    /*CROPS*/
 
+    public static final RegistryObject<Block> ZUCCINI_CROP =
+            Registration.BLOCKS.register("zuccini_crop",
+                    () -> new ZucciniCrop(AbstractBlock.Properties.from(Blocks.WHEAT)));
+
+
+    public static void register() { }
 
     private static <T extends Block>RegistryObject<T> register(String name, Supplier<T> block)
     {

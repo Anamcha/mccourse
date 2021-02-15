@@ -1,14 +1,13 @@
 {
-  //*******************************************************************************************************************
-  //Items
-  //*******************************************************************************************************************
+
+  /* Items */
+
   "item.mccourse.copper_ingot": "Copper Ingot",
   "item.mccourse.copper_wire": "Copper Wire",
   "item.mccourse.coppered_apple": "Coppered Apple",
 
-  //*******************************************************************************************************************
-  //Tools
-  //*******************************************************************************************************************
+  /* Tools */
+
   "item.mccourse.copper_wand": "Copper Wand",
   "item.mccourse.copper_shovel": "Copper Shovel",
   "item.mccourse.copper_sword": "Copper Sword",
@@ -16,17 +15,15 @@
   "item.mccourse.copper_pickaxe": "Copper Pickaxe",
   "item.mccourse.copper_axe": "Copper Axe",
 
-  //*******************************************************************************************************************
-  //Armor
-  //*******************************************************************************************************************
+   /* Armor */
+
   "item.mccourse.copper_helmet": "Copper Helmet",
   "item.mccourse.copper_chestplate": "Copper Chestplate",
   "item.mccourse.copper_leggings": "Copper Leggings",
   "item.mccourse.copper_boots": "Copper Boots",
 
-  //*******************************************************************************************************************
-  //Blocks
-  //*******************************************************************************************************************
+  /* Blocks */
+
   "block.mccourse.copper_ore": "Copper Ore",
   "block.mccourse.copper_block": "Copper Block",
   "block.mccourse.copper_fence": "Copper Fence",
@@ -40,12 +37,15 @@
   "block.mccourse.redstone_slab": "Redstone Slab",
   "block.mccourse.lapis_slab": "Lapis Lazuli Slab",
 
+  /* Redstone */
 
-  //*******************************************************************************************************************
-  //Redstone
-  //*******************************************************************************************************************
   "block.mccourse.copper_button": "Copper Button",
   "block.mccourse.copper_pressure_plate": "Copper Pressure Plate",
+
+  /* Crops */
+
+  "block.mccourse.zuccini_crop": "Zuccini Seeds",
+  "item.mccourse.zuccini": "Zuccini",
 
   "itemGroup.courseTab": "Course Tab"
 }
