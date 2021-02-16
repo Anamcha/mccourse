@@ -2,6 +2,7 @@ package com.adamkerr.mccourse.item;
 
 import com.adamkerr.mccourse.MCCourseMod;
 import com.adamkerr.mccourse.block.ModBlocks;
+import com.adamkerr.mccourse.block.ModFluids;
 import com.adamkerr.mccourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -104,6 +105,14 @@ public class ModItems
             Registration.ITEMS.register("zuccini_seed",
                     () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(),
                             new Item.Properties().group(MCCourseMod.COURSE_TAB)));
+
+    /* FLUIDS */
+
+    public static final RegistryObject<Item> OIL_BUCKET =
+            Registration.ITEMS.register("oil_bucket",
+                    () -> new BucketItem(ModFluids.OIL_FLUID::get,
+                            new Item.Properties().group(MCCourseMod.COURSE_TAB)
+                                .maxStackSize(1)));
 
 
     public static void register() { }

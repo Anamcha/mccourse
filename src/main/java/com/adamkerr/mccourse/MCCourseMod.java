@@ -1,6 +1,7 @@
 package com.adamkerr.mccourse;
 
 import com.adamkerr.mccourse.block.ModBlocks;
+import com.adamkerr.mccourse.block.ModFluids;
 import com.adamkerr.mccourse.events.ModEvents;
 import com.adamkerr.mccourse.item.ModItems;
 import com.adamkerr.mccourse.util.Config;
@@ -56,6 +57,7 @@ public class MCCourseMod
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModFluids.register();
 
         MinecraftForge.EVENT_BUS.register(new ModEvents());
 
