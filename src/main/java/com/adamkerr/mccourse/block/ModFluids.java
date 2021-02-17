@@ -33,7 +33,7 @@ public class ModFluids
 
     public static final RegistryObject<FlowingFluid> OIL_FLOWING
             = Registration.FLUIDS.register("oil_flowing",
-            () -> new ForgeFlowingFluid.Source(ModFluids.OIL_PROPERTIES));
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.OIL_PROPERTIES));
 
     public static final ForgeFlowingFluid.Properties OIL_PROPERTIES
             = new ForgeFlowingFluid.Properties(() -> OIL_FLUID.get(), () -> OIL_FLOWING.get(),
